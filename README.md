@@ -47,7 +47,7 @@ Astro Citrus is a simple opinionated starter built with the Astro framework. Use
 
 ## Demo
 
-Check out the [Demo](http://astrocitrus.artemkutsan.pp.ua/)
+Check out the [Demo](https://astrocitrus.netlify.app/)
 
 ## Quick start
 
