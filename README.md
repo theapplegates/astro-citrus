@@ -65,9 +65,12 @@ pnpm dlx create-astro --template artemkutsan/astro-citrus
 
 ## Preview
 
-![Astro Theme Citrus in a light theme mode](https://github.com/artemkutsan/astro-citrus/assets/12715988/84c89d42-4525-4674-b10c-6d6ebdc06382)
-
-![Astro Theme Citrus in a dark theme mode](https://github.com/artemkutsan/astro-citrus/assets/12715988/e0e575e2-445f-4c2d-a812-b5b53d2d9031)
+![Astro Theme Citrus in a light theme mode 01](https://github.com/ArtemKutsan/astro-citrus/blob/main/public/images/screenshot01.png?raw=true)
+![Astro Theme Citrus in a light theme mode 02](https://github.com/ArtemKutsan/astro-citrus/blob/main/public/images/screenshot02.png?raw=true)
+![Astro Theme Citrus in a dark theme mode 03](https://github.com/ArtemKutsan/astro-citrus/blob/main/public/images/screenshot03.png?raw=true)
+![Astro Theme Citrus in a light theme mode 04](https://github.com/ArtemKutsan/astro-citrus/blob/main/public/images/screenshot04.png?raw=true)
+![Astro Theme Citrus in a light theme mode 05](https://github.com/ArtemKutsan/astro-citrus/blob/main/public/images/screenshot05.png?raw=true)
+![Astro Theme Citrus in a dark theme mode 08](https://github.com/ArtemKutsan/astro-citrus/blob/main/public/images/screenshot08.png?raw=true)
 
 ## Commands
 
