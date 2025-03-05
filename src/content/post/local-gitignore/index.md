@@ -1,36 +1,36 @@
 ---
-title: "Локальный .gitignore"
-description: "Как создать дополнительный файл .gitignore"
-publishDate: "05 Mar 2025"
-tags: ["git", "gitignore"]
+title: "Local .gitignore"  
+description: "How to create an additional .gitignore file"  
+publishDate: "05 Mar 2025"  
+tags: ["git", "gitignore"]  
 ---
 
-## Как сделать `.local.gitignore`, который не синхронизируется с Git?
+## How to create `.local.gitignore` that is not synchronized with Git?
 
-1. **Создаём файл `.local.gitignore`**  
+1. **Create the `.local.gitignore` file**  
    ```bash
    touch .local.gitignore
    ```
 
-2. **Добавляем его в `.git/info/exclude`** (чтобы Git использовал его локально)  
+2. **Add it to `.git/info/exclude`** (so Git applies it locally)  
    ```bash
    echo ".local.gitignore" >> .git/info/exclude
    ```
 
-3. **Настраиваем Git, чтобы он читал `.local.gitignore` как `.gitignore`**  
+3. **Configure Git to treat `.local.gitignore` as `.gitignore`**  
    ```bash
    git config --local core.excludesfile .local.gitignore
    ```
 
-Теперь **`.local.gitignore` будет работать как обычный `.gitignore`, но только у тебя**.  
+Now **`.local.gitignore` will work like a regular `.gitignore`, but only for you**.  
 
-## Как это работает?
-- `.local.gitignore` не добавляется в репозиторий.  
-- Он применяется только **локально** на твоём компьютере.  
-- Он работает **как `.gitignore`**, но его нет у других разработчиков.  
-- Git **не видит этот файл** благодаря `.git/info/exclude`.  
+## How does it work?
+- `.local.gitignore` is not added to the repository.  
+- It is applied **only locally** on your computer.  
+- It works **like `.gitignore`**, but other developers don't have it.  
+- Git **does not see this file** thanks to `.git/info/exclude`.  
 
-**Теперь можешь добавлять туда локальные файлы**:
+**Now you can add local files to it**:  
 ```bash
 echo "my-secret-file.txt" >> .local.gitignore
 echo "debug_logs/" >> .local.gitignore
