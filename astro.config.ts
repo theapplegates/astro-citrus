@@ -23,9 +23,6 @@ import {
   transformerMetaHighlight,
   transformerNotationDiff,
 } from "@shikijs/transformers";
-// Конец
-
-import preact from "@astrojs/preact";
 
 // https://astro.build/config
 export default defineConfig({
@@ -81,7 +78,6 @@ export default defineConfig({
         insertManifestLink: false,
       },
     }),
-    preact(),
   ],
   markdown: {
     syntaxHighlight: false,
