@@ -103,8 +103,8 @@ export default defineConfig({
         rehypePrettyCode,
         {
           theme: {
-            light: "rose-pine-dawn", // После изменения темы нужно перезагрузить сервер
-            dark: "rose-pine", // После изменения темы нужно перезагрузить сервер
+            light: "rose-pine-dawn", // After changing the theme, the server needs to be restarted
+            dark: "rose-pine", // After changing the theme, the server needs to be restarted
           },
 
           transformers: [transformerNotationDiff(), transformerMetaHighlight()],
