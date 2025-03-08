@@ -9,15 +9,14 @@ import { defineConfig, envField } from "astro/config";
 import { siteConfig } from "./src/site.config";
 
 // Remark plugins
-import remarkDirective from "remark-directive"; /* Handle ::: directives as nodes */
-import { remarkAdmonitions } from "./src/plugins/remark-admonitions"; /* Add admonitions */
+import remarkDirective from "remark-directive"; /* handle ::: directives as nodes */
+import { remarkAdmonitions } from "./src/plugins/remark-admonitions"; /* add admonitions */
 import { remarkReadingTime } from "./src/plugins/remark-reading-time";
 
 // Rehype plugins
 import rehypeExternalLinks from "rehype-external-links";
 import rehypeUnwrapImages from "rehype-unwrap-images";
 
-// Начало
 import rehypePrettyCode from "rehype-pretty-code";
 import {
   transformerMetaHighlight,
@@ -87,14 +86,14 @@ export default defineConfig({
       footnoteLabelProperties: {
         className: [""],
       },
-      footnoteBackContent: "⤴", // Кастомный символ
+      footnoteBackContent: "⤴",
     },
 
     rehypePlugins: [
       [
         rehypeExternalLinks,
         {
-          rel: ["nofollow", "noreferrer"], // было ["nofollow, noreferrer"]
+          rel: ["nofollow", "noreferrer"],
           target: "_blank",
         },
       ],
@@ -103,8 +102,8 @@ export default defineConfig({
         rehypePrettyCode,
         {
           theme: {
-            light: "rose-pine-dawn", // After changing the theme, the server needs to be restarted
-            dark: "rose-pine", // After changing the theme, the server needs to be restarted
+            light: "rose-pine-dawn", // after changing the theme, the server needs to be restarted
+            dark: "rose-pine", // after changing the theme, the server needs to be restarted
           },
 
           transformers: [transformerNotationDiff(), transformerMetaHighlight()],
@@ -116,7 +115,6 @@ export default defineConfig({
   // https://docs.astro.build/en/guides/prefetch/
   prefetch: true,
   // ! Please remember to replace the following site property with your own domain
-  ////!!!!
   site: "http://astrocitrus.artemkutsan.pp.ua/",
   vite: {
     build: {
