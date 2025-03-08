@@ -3,6 +3,7 @@ title: "Local .gitignore"
 description: "How to create an additional .gitignore file"  
 publishDate: "05 Mar 2025"  
 tags: ["git", "gitignore"]  
+draft: true
 ---
 
 ## How to create `.local.gitignore` that is not synchronized with Git?
