@@ -36,3 +36,7 @@ Now **`.local.gitignore` will work like a regular `.gitignore`, but only for you
 echo "my-secret-file.txt" >> .local.gitignore
 echo "debug_logs/" >> .local.gitignore
 ```
+
+:::caution
+Before performing a commit rollback, you must manually backup the files listed in `.local.gitignore`. This is because files ignored by `.local.gitignore` are not tracked by Git and will be lost if you rollback the commit. Git will not restore these files as they were not committed or staged.
+:::
