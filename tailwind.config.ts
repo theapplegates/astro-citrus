@@ -45,8 +45,8 @@ export default {
   theme: {
     extend: {
       screens: {
-        xs: "320px", // Теперь можно использовать xs
-        // xl: '1200px', // Переопределяем точку xl
+        xs: "320px", // Add xs size
+        // xl: '1200px',
       },
       maxWidth: {
         lg: "32rem", // default 32rem (512px)
