@@ -26,7 +26,7 @@ import {
 // https://astro.build/config
 export default defineConfig({
   image: {
-    domains: ["webmention.io"],
+    domains: ["webmention.io", "res.cloudinary.com"],
   },
   integrations: [
     icon(),
@@ -115,7 +115,7 @@ export default defineConfig({
   // https://docs.astro.build/en/guides/prefetch/
   prefetch: true,
   // ! Please remember to replace the following site property with your own domain
-  site: "http://astrocitrus.artemkutsan.pp.ua/",
+  site: "http://citrus.paulapplegate.com/",
   vite: {
     build: {
       sourcemap: true, // Source maps generation
@@ -123,7 +123,7 @@ export default defineConfig({
     optimizeDeps: {
       exclude: ["@resvg/resvg-js"],
     },
-    plugins: [rawFonts([".ttf", ".woff"])],
+    plugins: [rawFonts([".ttf", ".woff2", ".woff"])],
   },
   env: {
     schema: {
