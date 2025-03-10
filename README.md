@@ -140,7 +140,7 @@ Adding a post/note is as simple as adding your .md(x) files to the `src/content/
 | description            | to be used for the head meta description property. |
 | publishDate \*         | ISO 8601 format with offsets allowed.              |
 
-### Frontmatter snippets
+### Frontmatter snippet
 
 Astro Citrus includes a helpful VSCode snippet which creates a frontmatter 'stub' for posts and note's, found here -> `.vscode/post.code-snippets`. Start typing the word `frontmatter` on your newly created .md(x) file to trigger it. Visual Studio Code snippets appear in IntelliSense via (⌃Space) on mac, (Ctrl+Space) on windows.
 
